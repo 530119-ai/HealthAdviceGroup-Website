@@ -1,0 +1,9 @@
+# Sensitive configuration
+includes/db.php
+
+# Environment files
+.env
+
+# OS junk
+.DS_Store
+Thumbs.db
