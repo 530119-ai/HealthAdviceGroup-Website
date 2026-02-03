@@ -1,9 +1,14 @@
+<?php
+require_once __DIR__ . '/config.php';
+?>
 
 =======
 <?php
 // Include reusable header
 require_once 'includes/header.php';
 ?>
+
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -153,4 +158,4 @@ includes folder. Every page that needs database access simply includes this file
 require_once 'includes/footer.php'; keyword require_once is used for each included dedicated 
 file on mutiple pages all changes made in one place (the single dedicated include file shared across web pages)
  -->
->>>>>>> 4bab416 (Update index.php)
+<!-- >>>>>>> 4bab416 (Update index.php) -->
