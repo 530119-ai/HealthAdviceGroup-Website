@@ -1,8 +1,5 @@
-<?php
-require_once __DIR__ . '/config.php';
-?>
 
-=======
+
 <?php
 // Include reusable header
 require_once 'includes/header.php';
@@ -47,7 +44,7 @@ require_once 'includes/header.php';
           View local weather forecasts and air quality information to help
           manage health risks related to environmental conditions.
         </p>
-        <a href="weather.php" class="btn btn-success">View Weather</a>
+        <a href="<?= BASE_URL ?>weather.php" class="btn btn-success">View Weather</a>
       </div>
     </div>
   </div>
