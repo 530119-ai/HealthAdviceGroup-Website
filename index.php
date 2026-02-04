@@ -17,7 +17,19 @@ require_once 'includes/header.php';
     <!-- alternative boostrap styled CSS method (package manager compiled file extraction individual .text js an css files), otherwise use CDN ->
     CSS: <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     JS: <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    CDN - provides maintenance while ensuring responsive design and accessibility support.
+    bundle = includes Popper.js (needed for dropdowns, modals, tooltips)
+    
+  To - do list
+  ✅ Login system (admin only dashboard)
 
+  ✅ Appointment booking calendar
+
+  ✅ Email notifications
+
+  ✅ Health tips based on weather
+
+  ✅ Data validation & security (PDO, prepared statements)
     -->
     <!-- The compiled Bootstrap CSS and JavaScript files were used 
       rather than source files to ensure browser compatibility, 

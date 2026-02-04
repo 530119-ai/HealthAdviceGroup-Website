@@ -1,14 +1,21 @@
+<?php
+require_once __DIR__ . '/config.php';
+require_once __DIR__ . '/assets.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>Health Advice Group</title>
 
-  <!-- Bootstrap -->
-  <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+  
+  <!-- Centralised Bootstrap CSS -->
+  <link rel="stylesheet" href="<?= BOOTSTRAP_CSS ?>">
 
   <!-- Global styles -->
-  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="<?= BASE_URL ?>assets/css/style.css">
+  
 </head>
 <body>
 
