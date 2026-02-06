@@ -1,78 +1,68 @@
 <?php
-// advice.php
-$pageTitle = "Health Advice";
-include 'includes/header.php';
+require_once 'includes/header.php';
 ?>
 
-<main class="container my-5">
-    <h1 class="mb-4">Health Advice</h1>
-    <p class="lead">
-        Practical advice to help you manage health risks related to weather
-        conditions and environmental factors.
-    </p>
+<h1 class="mb-4">Health Advice</h1>
 
-    <div class="row g-4">
+<p class="lead">
+  Access guidance to help manage health conditions affected by weather
+  and environmental factors, including allergies and extreme temperatures.
+</p>
 
-        <!-- Extreme Heat -->
-        <div class="col-md-4">
-            <div class="card h-100 shadow-sm">
-                <div class="card-body">
-                    <h5 class="card-title">Extreme Heat</h5>
-                    <p class="card-text">
-                        High temperatures can increase the risk of dehydration,
-                        heat exhaustion, and heatstroke.
-                    </p>
-                    <ul>
-                        <li>Drink plenty of water</li>
-                        <li>Avoid direct sunlight at peak hours</li>
-                        <li>Wear light, breathable clothing</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+<div class="row mt-4">
 
-        <!-- Cold Weather -->
-        <div class="col-md-4">
-            <div class="card h-100 shadow-sm">
-                <div class="card-body">
-                    <h5 class="card-title">Cold Weather</h5>
-                    <p class="card-text">
-                        Cold temperatures can worsen respiratory conditions and
-                        increase the risk of hypothermia.
-                    </p>
-                    <ul>
-                        <li>Dress in warm layers</li>
-                        <li>Keep indoor spaces heated</li>
-                        <li>Limit time spent outdoors</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <!-- Air Quality & Allergies -->
-        <div class="col-md-4">
-            <div class="card h-100 shadow-sm">
-                <div class="card-body">
-                    <h5 class="card-title">Air Quality & Allergies</h5>
-                    <p class="card-text">
-                        Poor air quality and pollen levels can trigger asthma
-                        and seasonal allergies.
-                    </p>
-                    <ul>
-                        <li>Monitor local air quality levels</li>
-                        <li>Keep windows closed on high pollen days</li>
-                        <li>Follow prescribed medication plans</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
+  <!-- Asthma -->
+  <div class="col-md-4 mb-3">
+    <div class="card h-100">
+      <div class="card-body">
+        <h5 class="card-title">Asthma & Air Quality</h5>
+        <p class="card-text">
+          Monitor air quality levels and limit outdoor activity when pollution
+          or pollen levels are high.
+        </p>
+      </div>
     </div>
+  </div>
 
-    <div class="alert alert-info mt-5" role="alert">
-        <strong>Note:</strong> This advice is general guidance and does not replace
-        professional medical advice.
+  <!-- Hay Fever -->
+  <div class="col-md-4 mb-3">
+    <div class="card h-100">
+      <div class="card-body">
+        <h5 class="card-title">Hay Fever</h5>
+        <p class="card-text">
+          Keep windows closed during peak pollen times and consider appropriate
+          allergy medication.
+        </p>
+      </div>
     </div>
-</main>
+  </div>
 
-<?php include 'includes/footer.php'; ?>
+  <!-- Extreme Temperatures -->
+  <div class="col-md-4 mb-3">
+    <div class="card h-100">
+      <div class="card-body">
+        <h5 class="card-title">Extreme Temperatures</h5>
+        <p class="card-text">
+          Stay hydrated in hot weather and ensure adequate heating and clothing
+          during cold conditions.
+        </p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<hr class="my-5">
+
+<section>
+  <h2>General Environmental Health Tips</h2>
+  <ul>
+    <li>Check daily weather and air quality reports</li>
+    <li>Reduce exposure during high-risk conditions</li>
+    <li>Seek medical advice if symptoms worsen</li>
+  </ul>
+</section>
+
+<?php
+require_once 'includes/footer.php';
+?>

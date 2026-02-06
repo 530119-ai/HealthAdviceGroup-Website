@@ -69,7 +69,8 @@
         <p class="card-text">
           Request personalised environmental health advice.
         </p>
-        <a href="<?= BASE_URL ?>consultation.php" class="btn btn-success">
+        <!-- Absolute path -->
+        <a href="<?= BASE_URL ?>consultation.php" class="btn btn-success"> 
           Request Consultation
         </a>
       </div>
