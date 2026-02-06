@@ -1,11 +1,8 @@
-
-
 <?php
 // Include reusable header
 require_once 'includes/header.php';
+
 ?>
-
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -13,7 +10,7 @@ require_once 'includes/header.php';
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"> 
+    <!-- <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">  --> 
     <!-- alternative boostrap styled CSS method (package manager compiled file extraction individual .text js an css files), otherwise use CDN ->
     CSS: <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     JS: <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
@@ -36,9 +33,9 @@ require_once 'includes/header.php';
       performance, and ease of maintenance. -->
     <!-- Compiled boostrap vs source files URL boostrap -->
 
-</head>
-<body>
-
+<!-- </head> -->
+<!-- <body> -->
+<main>
 <h1 class="mb-4">Welcome to Health Advice Group</h1>
 
 <p class="lead">
@@ -109,7 +106,7 @@ require_once 'includes/footer.php';
     <!-- <button class="btn btn-success">Bootstrap Test</button>
     <script src="bootstrap/js/boostrap.bundle.min.js"></script> -->
 </body>
-</html>
+<html>
 
 <!-- ✔ Maintainability
 A third-party developer can immediately understand the page structure -->
