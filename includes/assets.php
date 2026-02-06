@@ -9,3 +9,4 @@ define('BOOTSTRAP_JS', BASE_URL . 'bootstrap/js/bootstrap.bundle.min.js');
 // Future-proofing (easy to extend later)
 // define('FONT_AWESOME', BASE_URL . 'assets/vendor/fontawesome/css/all.min.css');
 
+?>

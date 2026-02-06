@@ -4,7 +4,8 @@
   <p>&copy; <?= date('Y'); ?> Health Advice Group</p>
 </footer>
 
- <!-- Centralised Bootstrap JS -->
-    <script src="<?= BOOTSTRAP_JS ?>"></script>
+<!-- Centralised Bootstrap JS -->
+<script src="<?= BOOTSTRAP_JS ?>"></script>
+
 </body>
 </html>

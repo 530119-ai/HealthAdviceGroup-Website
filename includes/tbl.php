@@ -2,7 +2,7 @@
 require_once 'conn.php'; 
 
 //Step 1: conn.php file
-
+// CREATE DB + TABLE IF NOT EXISTS
 // --- Step 2: Create the Database if it doesn't exist ---
 $sql_create_db = "CREATE DATABASE IF NOT EXISTS $dbname";
 if ($conn->query($sql_create_db) === TRUE) {
@@ -18,9 +18,9 @@ $conn->select_db($dbname);
 $sql_create_table = "
 CREATE TABLE IF NOT EXISTS consultations (
     id INT AUTO_INCREMENT PRIMARY KEY,
-    name VARCHAR(100),
-    email VARCHAR(100),
-    message TEXT,
+    name VARCHAR(100) NOT NULL,
+    email VARCHAR(100) NOT NULL,
+    message TEXT NOT NULL,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );";
 

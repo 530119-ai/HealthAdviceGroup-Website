@@ -17,7 +17,7 @@ if ($conn->connect_error) {
 
 // Optional: You can add an echo here for testing if the connection is successful,
 // but it's often better to just let the script run silently if successful.
-echo "Connected successfully!";
+// echo "Connected successfully!"; only keep for the first time creating it
 
 // Note: We don't close the connection here, we leave it open so other files can use $conn
 

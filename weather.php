@@ -1,5 +1,4 @@
 <?php
-// Reusable layout
 require_once 'includes/header.php';
 ?>
 
@@ -36,10 +35,9 @@ require_once 'includes/header.php';
   <div id="weatherResult" aria-live="polite"></div>
 </section>
 
-<!-- Page-specific JavaScript -->
-<script src="assets/js/weather.js"></script>
+<!-- Page-specific JS (NO Bootstrap here) -->
+<script src="<?= BASE_URL ?>assets/js/weather.js"></script>
 
 <?php
-// Reusable footer
 require_once 'includes/footer.php';
 ?>
