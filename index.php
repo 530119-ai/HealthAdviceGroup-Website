@@ -33,10 +33,37 @@ Semantic headings, readable layout, consistent navigation. -->
 
 <h1 class="mb-4">Welcome to Health Advice Group</h1>
 
+<!-- introduction paragraph -->
 <p class="lead">
-  Health Advice Group provides information and support to help individuals
+  Health Advice Group provides information and support to help individuals 
   make informed decisions about environmental health risks.
 </p>
+
+<!-- First-time users
+
+Marketing / onboarding
+
+Makes login more discoverable -->
+
+<!-- Call to action login button -->
+<a href="<?= BASE_URL ?>login.php" class="btn btn-primary mb-4">
+  Login to Your Account
+</a>
+
+<!-- or as a bootstrap card 
+ <div class="col-md-4 mb-3">
+  <div class="card h-100 border-primary">
+    <div class="card-body">
+      <h5 class="card-title">User Login</h5>
+      <p class="card-text">
+        Access your dashboard and manage consultations.
+      </p>
+      <a href="(PHP TAG ABBREV) BASE_URL login.php" class="btn btn-primary">
+        Login
+      </a>
+    </div>
+  </div>
+</div> -->
 
 <div class="row mt-4">
   <!-- Weather -->
