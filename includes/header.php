@@ -1,12 +1,18 @@
+<!-- NO duplicate Bootstrap (files are configured for web pages included content and links and maintainable and repeated) -->
+<!-- 3 files accordingly work in strict syncronisation with requirements for a modular web design approach across all website pages (reset the architecture)-->
+<!-- No hard-coded Bootstrap. Use the configuration / configurated prepared files -->
 <?php
-require_once __DIR__ . '/config.php';
-require_once __DIR__ . '/assets.php';
+require_once __DIR__ . '/config.php'; //initilize all sessions, keep open mysql connection files 
+require_once __DIR__ . '/assets.php'; //code library and pack manager
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8"> 
+  <!-- Metadata is essential for organizing digital assets, enabling search functionality, and ensuring long-term usability of data.  -->
+   <!-- "self-referential" data increase visiblity with straightfoward keyword descriptions content context in a way that search engines can 
+    understand by filtering a catalog and organising data/ large information-->
   <title>Health Advice Group</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 

@@ -25,6 +25,10 @@
 <!-- </head> -->
 <!-- <body> -->
 
+<!-- ✅ Accessibility & UX
+
+Semantic headings, readable layout, consistent navigation. -->
+
 <?php require_once 'includes/header.php'; ?>
 
 <h1 class="mb-4">Welcome to Health Advice Group</h1>

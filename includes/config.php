@@ -8,7 +8,7 @@ session_start();
 
 // config.php file
 
-// Start session for all pages
+// Start (MYSQLI connection files) session for all pages or in other words initilise mysql queries
 
 
 define('DB_HOST', 'localhost');
@@ -29,7 +29,7 @@ define('DB_PASS', '');
 
 // // Database configuration
 // define('DB_HOST', 'localhost');
-// define('DB_NAME', 'health_advice_group'); old not my XAMPP default
+// define('DB_NAME', 'health_advice_group'); old code not my XAMPP default wasnt naming convention base name.. (the dbname i selected before it changed)
 // define('DB_USER', 'root');
 // define('DB_PASS', '');
 

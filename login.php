@@ -1,3 +1,4 @@
+<!-- Missing a page content link or button for link navigation -->
 <?php
 require_once 'includes/header.php';
 ?>

@@ -1,3 +1,16 @@
+<!-- ✅ Structural consistency
+
+consultation.php now matches:
+
+index.php
+
+weather.php
+
+advice.php
+
+This is exactly what “maintainable by a third party” means. --> 
+<!-- Maintainable or maintain it means keep the same up keep it or repeat it keep it consistent and the same not different-->
+
 <?php
 require_once 'includes/header.php';
 ?>
