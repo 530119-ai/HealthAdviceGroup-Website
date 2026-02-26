@@ -12,9 +12,13 @@ session_start();
 
 
 define('DB_HOST', 'localhost');
-define('DB_NAME', 'healthadvicegroup_db');
+define('DB_NAME', 'healthadvicegroup_db'); 
 define('DB_USER', 'root');
 define('DB_PASS', '');
+
+// ^^^ think about commenting out now redundant code as using conn.php file instead and mysqli 
+// method delete file and take the default initilised URL method only
+
 
 // Base URL: This MUST match the folder name you put inside C:\xampp\htdocs\
 // define('BASE_URL', '/HealthAdviceGroup-Website-main/'); // <-- Use this exact path

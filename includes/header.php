@@ -17,10 +17,11 @@ require_once __DIR__ . '/assets.php'; //code library and pack manager
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Centralised Bootstrap CSS -->
-  <link rel="stylesheet" href="<?= BOOTSTRAP_CSS ?>">
-
+  <link rel="stylesheet" href="<?= BOOTSTRAP_CSS ?>"> 
+<!-- parameterised method default centralised configuration file directory-->
   <!-- Global styles -->
-  <link rel="stylesheet" href="<?= BASE_URL ?>assets/css/styles.css">
+  <link rel="stylesheet" href="<?= BASE_URL ?>assets/css/styles.css"> 
+<!-- unparameterised method only use BASE_URL method then "hardcodes directory, without centralised configuration (like assets.php file)" -->
 </head>
 <body>
 

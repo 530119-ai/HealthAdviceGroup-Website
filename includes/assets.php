@@ -1,10 +1,11 @@
-<!-- CODE LIBRARIES / ASSETS Pack manager downloads sources -->
-
+<!-- CODE LIBRARIES / ASSETS Package manager downloads sources -->
+<!-- one dedicated include file - for use across all webpages -->
 <?php
 // Centralised asset configuration
 
 define('BOOTSTRAP_CSS', BASE_URL . 'bootstrap/css/bootstrap.min.css');
-define('BOOTSTRAP_JS', BASE_URL . 'bootstrap/js/bootstrap.bundle.min.js');
+define('BOOTSTRAP_JS', BASE_URL . 'bootstrap/js/bootstrap.bundle.min.js'); 
+// setting a paramter to the method or argument (value) and using the dot notation to link them somehow
 
 // duplicated <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"> in from header.php in index.php but as its embedded as 
 // navigation and in the html head tag (header.php) its become an absloute vs relative path depending on resolution of page depth. 

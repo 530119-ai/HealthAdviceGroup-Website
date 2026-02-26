@@ -58,14 +58,15 @@ Makes login more discoverable -->
       <p class="card-text">
         Access your dashboard and manage consultations.
       </p>
-      <a href="(PHP TAG ABBREV) BASE_URL login.php" class="btn btn-primary">
+      <a href="(PHP TAG ABBREV - add it back) BASE_URL login.php" class="btn btn-primary">
         Login
       </a>
     </div>
   </div>
 </div> -->
 
-<div class="row mt-4">
+<div class="row mt-4"> 
+  <!-- expands accordingly to individual cards margins and padding/columns -->
   <!-- Weather -->
   <div class="col-md-4 mb-3">
     <div class="card h-100">
@@ -127,13 +128,13 @@ Makes login more discoverable -->
 “The system uses a modular layout with centralised configuration and asset management to ensure consistency, maintainability, and scalability.” -->
 
 <!-- <button class="btn btn-success">Bootstrap Test</button>
-    <script src="bootstrap/js/boostrap.bundle.min.js"></script> -->
+    <script src="bootstrap/js/boostrap.bundle.min.js"></script> all in assets.php file now as central configration key settings paramitised directories -->
 
 
 <!-- ✔ Maintainability
 A third-party developer can immediately understand the page structure -->
 <!-- BOOTSTRAP GRID COLUMNS: For each grid configuration and layout cards must have columns in a row and rows must 
- be in a container (grid system/ horizonal wrapper for alignment)  -->
+ be in a (grid layout) container (grid system/ horizonal wrapper for alignment)  -->
 <!-- class="row": This is part of Bootstrap's Grid System. It creates a horizontal 
  wrapper that holds columns (e.g., col-md-6) and ensures they align properly on the page. -->
 
@@ -144,10 +145,10 @@ A third-party developer can immediately understand the page structure -->
      ✔ reusability
      ✔ scalability
 
-    "produce code that can be maintained by a third party", Centralised configuration -> configuration in one place using outside 
-    sources (included modual .php files such as footer.php) 
+    "produce code that can be maintained by a third party", Centralised configuration -> configuration in one place using outside external
+    sources aka asset package manager and code librares instaliation + third party source file scripts links (included modual/ modular architecture .php files such as footer.php) 
 
-    Separation of concerns
+    Separation of concerns (individual files with their own assigements/ tasks to handel for example server side database config vs index.php front end side)
 
     Reusable components
 
@@ -174,8 +175,9 @@ includes folder. Every page that needs database access simply includes this file
 
 <!-- The configuration is handled all into one dedicated file rather than spread across mutiple and repeated for each web page -->
 
-<!-- explicitly demonstrates modular includes for layout and logic and Change layout without touching logic,
- Update security in ONE PLACE
+<!-- IMPORTANT -->
+<!-- explicitly demonstrates modular includes for layout and logic and Change layout without touching logic (seperation of data dependencies concerns),
+ Update security (errors or prepared statments logic) in ONE PLACE
   so changing or using the single dedicated file with all key setup and 
  settings can be reused anywhere without inconsistencies, because every web page uses the 
  same includes/.php file it shares it which means it can be changed and 
