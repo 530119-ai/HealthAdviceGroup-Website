@@ -4,6 +4,7 @@ require_once 'conn.php';
 //Step 2: conn.php file
 // CREATE DB + TABLE IF NOT EXISTS
 // --- Step 2: Create the Database if it doesn't exist ---
+// initilizing the creation of the database (checking if it exists)
 $sql_create_db = "CREATE DATABASE IF NOT EXISTS $dbname";
 if ($conn->query($sql_create_db) === TRUE) {
     echo "Database '$dbname' created successfully or already exists.<br>";
