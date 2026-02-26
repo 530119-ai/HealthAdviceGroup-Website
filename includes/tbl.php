@@ -1,7 +1,7 @@
 <?php
 require_once 'conn.php'; 
 
-//Step 1: conn.php file
+//Step 2: conn.php file
 // CREATE DB + TABLE IF NOT EXISTS
 // --- Step 2: Create the Database if it doesn't exist ---
 $sql_create_db = "CREATE DATABASE IF NOT EXISTS $dbname";
