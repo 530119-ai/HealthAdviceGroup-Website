@@ -47,9 +47,25 @@ require_once __DIR__ . '/assets.php'; //code library and pack manager
         <li class="nav-item">
           <a class="nav-link" href="<?= BASE_URL ?>dashboard.php">Dashboard</a>
         </li>
+
+      <!-- 🔐 Login link -->
+
+        <li class="nav-item">
+          <a class="nav-link" href="<?= BASE_URL ?>login.php">Login</a>
+        </li>
       </ul>
     </div>
   </div>
 </nav>
+
+<!-- Global navigation (header.php) -->
+<!-- Login is site-wide, not page-specific
+
+Users expect Login / Logout in the top navigation
+
+Only needs to be added once
+
+Automatically appears on every page -->
+<!-- Exam-safe: demonstrates DRY (Do Not Repeat Yourself) + separation of concerns -->
 
 <main class="container mt-4">

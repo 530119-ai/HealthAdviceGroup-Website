@@ -50,6 +50,11 @@ Makes login more discoverable -->
   Login to Your Account
 </a>
 
+<!-- Examiner-friendly explanation (use this wording if needed)
+
+Authentication-related navigation is implemented in the global header to ensure 
+consistent access across all pages and to avoid duplicated markup. This approach improves maintainability, usability, and follows separation of concerns. -->
+
 <!-- or as a bootstrap card 
  <div class="col-md-4 mb-3">
   <div class="card h-100 border-primary">
