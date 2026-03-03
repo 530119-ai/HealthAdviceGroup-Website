@@ -2,7 +2,13 @@
 <!-- 3 files accordingly work in strict syncronisation with requirements for a modular web design approach across all website pages (reset the architecture)-->
 <!-- No hard-coded Bootstrap. Use the configuration / configurated prepared files -->
 <?php
-require_once __DIR__ . '/config.php'; //initilize all sessions, keep open mysql connection files 
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
+?>
+
+<?php
+require_once __DIR__ . '/config.php'; //initilize all sessions, keep open mysql connection files (may need to switch to conn.php file)
 require_once __DIR__ . '/assets.php'; //code library and pack manager
 ?>
 
@@ -36,8 +42,15 @@ require_once __DIR__ . '/assets.php'; //code library and pack manager
     <div class="collapse navbar-collapse" id="mainNav">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item">
-          <a class="nav-link" href="<?= BASE_URL ?>index.php">Home</a>
+          <a class="nav-link" href="<?= BASE_URL ?>index.php">Home</a> 
         </li>
+        <!-- BASE_URL = absloute path = actual assigned definitive path vs 
+         before was using the relative path = current or working file path location or base root 
+         (xampp server program directory) being relative to itself-->
+         <!-- use case / previous example changed <li class="nav-item">
+          <a class="nav-link" href="index.php">index/home</a> -->
+          <!-- Use absolute (or root-relative) when linking across hosts or to avoid ambiguity. 
+          "If it comes from your domain - relative, if it’s from someone else’s domain - absolute." -->
         <li class="nav-item">
           <a class="nav-link" href="<?= BASE_URL ?>weather.php">Weather</a>
         </li>
@@ -49,10 +62,29 @@ require_once __DIR__ . '/assets.php'; //code library and pack manager
         </li>
 
       <!-- 🔐 Login link -->
+      <!-- Detect Session-based dynamic nav bar login > logout toggle. Global architecture.  -->
 
-        <li class="nav-item">
-          <a class="nav-link" href="<?= BASE_URL ?>login.php">Login</a>
-        </li>
+        <?php if (isset($_SESSION['user_id'])): ?>
+        <!--Example echo output: Welcome, admin@example.com
+            Logout -->
+            <!--Conditonal session-based management > Show user-specific content -->
+    <li class="nav-item">
+        <span class="nav-link">
+            Welcome, <?= htmlspecialchars($_SESSION['user_email']) ?> 
+        </span>
+    </li>
+
+    <li class="nav-item">
+        <a class="nav-link" href="<?= BASE_URL ?>logout.php">Logout</a>
+    </li>
+
+<?php else: ?>
+
+    <li class="nav-item">
+        <a class="nav-link" href="<?= BASE_URL ?>login.php">Login</a>
+    </li>
+
+<?php endif; ?>
       </ul>
     </div>
   </div>

@@ -1,23 +1,24 @@
 <?php
-define('BASE_URL', '/HealthAdviceGroup-Website-main/');
+define('BASE_URL', '/HealthAdviceGroup-Website/'); //base URL require name change on different computer-named folders
 ?>
 
 <?php
 // Start session for all pages
-session_start();
+// session_start();
 
 // config.php file
 
 // Start (MYSQLI connection files) session for all pages or in other words initilise mysql queries
 
 
-define('DB_HOST', 'localhost');
-define('DB_NAME', 'healthadvicegroup_db'); 
-define('DB_USER', 'root');
-define('DB_PASS', '');
+// define('DB_HOST', 'localhost');
+// define('DB_NAME', 'healthadvicegroup_db'); 
+// define('DB_USER', 'root');
+// define('DB_PASS', '');
 
+// Important
 // ^^^ think about commenting out now redundant code as using conn.php file instead and mysqli 
-// method delete file and take the default initilised URL method only to the conn.php file move it.
+// method delete file and take the default initilised URL method only to the conn.php file move it. like clixel
 
 
 // Base URL: This MUST match the folder name you put inside C:\xampp\htdocs\

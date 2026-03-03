@@ -1,5 +1,5 @@
 <?php
-require_once 'conn.php'; 
+require_once 'includes/conn.php'; 
 
 //Step 2: conn.php file
 // CREATE DB + TABLE IF NOT EXISTS
@@ -31,6 +31,25 @@ if ($conn->query($sql_create_table) === TRUE) {
     echo "Error creating table: " . $conn->error . "<br>";
 }
 
-$conn->close(); // Close the connection when done (good practice) 
-// It's a good idea to close the connection once this script is done running
+// Close the connection when done (good practice) 
+// It's a good idea to close the (database --> CRUD administration operations) connection once this script is done running
 ?>
+
+<?php // --- Step 5: Create the 'users' table ---
+$sql_create_users = "
+CREATE TABLE IF NOT EXISTS users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    email VARCHAR(100) NOT NULL UNIQUE,
+    password VARCHAR(255) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);";
+
+if ($conn->query($sql_create_users) === TRUE) {
+    echo "Table 'users' created successfully or already exists.<br>";
+} else {
+    echo "Error creating users table: " . $conn->error . "<br>";
+}
+
+$conn->close();
+?>
+
