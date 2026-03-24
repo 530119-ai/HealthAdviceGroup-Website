@@ -5,6 +5,7 @@
 
 define('BOOTSTRAP_CSS', BASE_URL . 'bootstrap/css/bootstrap.min.css');
 define('BOOTSTRAP_JS', BASE_URL . 'bootstrap/js/bootstrap.bundle.min.js'); 
+// Sets this define function file path as a custom base URL shortcut or abbreviation
 // setting a paramter to the method or argument (value) and using the dot notation to link them somehow
 
 // duplicated <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"> in from header.php in index.php but as its embedded as 

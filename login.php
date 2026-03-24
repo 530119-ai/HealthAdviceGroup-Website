@@ -34,9 +34,11 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             if (password_verify($password, $user['password'])) {
 
                 // Set session variables
-                $_SESSION['user_id'] = $user['id'];
+                $_SESSION['user_id'] = $user['id']; 
+                // protect dashboard with session credntials (with authentication navigation = 
+                // cant use website features/see content, without being logged in)
                 $_SESSION['user_email'] = $user['email'];
-
+                // allows website to Show user-specific content with back end validation and verification key value settings
                 // Redirect to dashboard
                 header("Location: " . BASE_URL . "dashboard.php");
                 exit;
