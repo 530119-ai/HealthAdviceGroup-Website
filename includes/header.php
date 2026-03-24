@@ -16,11 +16,13 @@ require_once __DIR__ . '/assets.php'; //code library and pack manager
 <html lang="en">
 <head>
   <meta charset="UTF-8"> 
-  <!-- Metadata is essential for organizing digital assets, enabling search functionality, and ensuring long-term usability of data.  -->
+  <!-- Metadata is essential for organizing digital assets, enabling search functionality, and ensuring long-term usability of data (accessible)
+   Encoder for single byte symbols - Unicode transformation format.  -->
    <!-- "self-referential" data increase visiblity with straightfoward keyword descriptions content context in a way that search engines can 
     understand by filtering a catalog and organising data/ large information-->
   <title>Health Advice Group</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <!-- meta data = properties such as descriptive details, structural data and administrative information-->
 
   <!-- Centralised Bootstrap CSS -->
   <link rel="stylesheet" href="<?= BOOTSTRAP_CSS ?>"> 
